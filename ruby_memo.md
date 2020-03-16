@@ -183,3 +183,11 @@ def skip_animals(animals, skip)
 end
 ```
 
+- Enum2 collect
+```ruby
+# ROT13(シーザー暗号: 13文字後ろにずらす)
+def rot13(secret_messages)
+  # your code here
+    secret_messages.map {|m| m.tr!("a-z", "n-za-m")}
+end
+```
