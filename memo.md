@@ -171,3 +171,15 @@ hackerrank.keep_if {|key, value| key.is_a? Integer }
 hackerrank.delete_if {|key, value| key % 2 == 0}
 
 ```
+
+- Enum1
+```ruby
+def skip_animals(animals, skip)
+  # Your code here
+  result = []
+  animals.each_with_index { |item, index| result.push("#{index}:#{item}") }
+  result.shift(skip)
+  return result
+end
+```
+
