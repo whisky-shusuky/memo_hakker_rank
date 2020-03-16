@@ -155,3 +155,19 @@ def iter_hash(hash)
 end
 
 ```
+
+- ハッシュ2
+```ruby
+h.store(key, value)
+
+> h = {1 => 1, 2 => 4, 3 => 9, 4 => 16, 5 => 25}
+ => {1 => 1, 2 => 4, 3 => 9, 4 => 16, 5 => 25}
+> h.keep_if {|key, value| key % 2 == 0} # or h.delete_if {|key, value| key % 2 != 0}
+ => {2 => 4, 4 => 16}
+
+# Enter your code here.
+hackerrank.store(543121, 100)
+hackerrank.keep_if {|key, value| key.is_a? Integer }
+hackerrank.delete_if {|key, value| key % 2 == 0}
+
+```
