@@ -76,3 +76,23 @@ def index_arr_multiple_add(arr, index)
     arr.insert(index,1,2)
 end
 ```
+
+配列4
+
+```ruby
+ arr = [5, 6, 5, 4, 3, 1, 2, 5, 4, 3, 3, 3] 
+Delete an element from the end of the array
+ > arr.pop
+ => 3
+Delete an element from the beginning of the array
+ > arr.shift
+ => 5
+Delete an element at a given position
+ > arr.delete_at(2)
+ => 4
+Delete all occurrences of a given element
+ > arr.delete(5)
+ => 5
+ > arr
+ => [6, 3, 1, 2, 4, 3, 3]
+```
