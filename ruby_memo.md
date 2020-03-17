@@ -194,9 +194,9 @@ end
 
 - Enum3 reduce
 
-```
+```ruby
 #your task is to complete the sum method which takes an integer n and returns the sum to the n terms of the series.
-# nまでの整数それぞれの乗数を求めてから、乗数の合計を出せという意味だった。
+# nまでの整数それぞれの乗数に1を足してから、、乗数の合計を出せという意味だった。
 def sum_terms(n)
   # your code here
     # これだと5*6 = 30, 30* 7= 210 ... 151200 となる
