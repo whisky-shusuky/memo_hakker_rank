@@ -217,3 +217,11 @@ def prime?(number)
     (2...number).none? { |n| number % n == 0 }
 end
 ```
+
+```ruby
+# index 以降の配列を取る
+def take(array, index) 
+    array.shift(index)
+    return array
+end
+```
