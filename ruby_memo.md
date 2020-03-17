@@ -218,10 +218,19 @@ def prime?(number)
 end
 ```
 
+- Methods 2
 ```ruby
 # index 以降の配列を取る
 def take(array, index) 
     array.shift(index)
     return array
+end
+```
+
+- Methods 3
+  - 引数の数を自由に取って連結する
+```ruby
+def full_name(first, *rest)
+   rest.reduce(first) {|x,y| x + " " + y}
 end
 ```
