@@ -208,3 +208,12 @@ def sum_terms(n)
     (1..n).map {|x| x**2+1}.inject(0) {|product, n| product + n } if n >= 0
 end
 ```
+
+- Methods 1
+```ruby
+# 素数を返す
+def prime?(number)
+    return false if [0, 1].include?(number)
+    (2...number).none? { |n| number % n == 0 }
+end
+```
